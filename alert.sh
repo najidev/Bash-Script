@@ -31,7 +31,7 @@ do
  			--mail-rcpt $receiver\
  			--user $sender:$gmpwd \
  			-F '=(;type=multipart/mixed' -F "=$body;type=text/plain" -F "file=@$file;type=$MIMEType;encoder=base64" -F '=)' \
-      -H "Subject: $sub" -H "From: World Optic Alerts <$sender>" -H "To: $i"
+      -H "Subject: $sub" -H "From: Alerts <$sender>" -H "To: $i"
     done
   fi
 done
